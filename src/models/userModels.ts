@@ -13,10 +13,21 @@ const userSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    required: [true, "Please provide a password"],
   },
-  isAdmin: {
+  provider: {
     type: String,
+    default: "CREDENTIALS",
+  },
+  googleid: String,
+  role: {
+    type: String,
+    default: "USER",
+  },
+  profilePic: String,
+  accesstoken: String,
+  refreshtoken: String,
+  isAdmin: {
+    type: Boolean,
     default: false,
   },
   isVerified: {
