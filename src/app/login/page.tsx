@@ -53,16 +53,6 @@ export default function LoginPage() {
               Continue with Google
             </a>
           </div>
-
-          <p className="mt-8 text-center text-sm text-zinc-600 dark:text-zinc-400">
-            Don't have an account?{" "}
-            <Link
-              href="/signup"
-              className="font-semibold text-zinc-900 underline underline-offset-2 hover:text-zinc-700 dark:text-white dark:hover:text-zinc-200"
-            >
-              Sign up
-            </Link>
-          </p>
         </div>
       </div>
     </div>
