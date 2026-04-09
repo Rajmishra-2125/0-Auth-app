@@ -37,12 +37,6 @@ export async function GET(req: Request) {
 
     // 3. Find or create user
     let user = await User.findOne({ email });
-    if (user && user.provider === "CREDENTIALS") {
-      return NextResponse.json(
-        { success: false, message: "this email already registered" },
-        { status: 400 },
-      );
-    }
     if (!user) {
       user = await User.create({
         email,
