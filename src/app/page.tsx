@@ -13,13 +13,13 @@ export default function Home() {
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
           <a
-            href="/api/user/login"
+            href="/login"
             className="inline-flex h-12 items-center justify-center rounded-full bg-slate-900 px-8 text-sm font-semibold text-white transition hover:bg-slate-700"
           >
             Login
           </a>
           <a
-            href="/api/user/signup"
+            href="/signup"
             className="inline-flex h-12 items-center justify-center rounded-full border border-slate-200 bg-white px-8 text-sm font-semibold text-slate-900 transition hover:border-slate-300 hover:bg-slate-50 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-50 dark:hover:border-zinc-700 dark:hover:bg-zinc-800"
           >
             Sign up
